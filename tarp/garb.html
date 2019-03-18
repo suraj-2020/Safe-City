@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Preloader with pure CSS</title>
+    
+    <link rel="stylesheet" href="zstyle.css">
+</head>
+<body onload="myFunction()">
+    
+    <div class="loaderBox" id="load_screen">
+        <div class="loadAnim" id="loading">
+            
+            <div class="loadeAnim1"></div>
+            <div class="loadeAnim2"></div>
+            <div class="loadeAnim3"></div>
+            
+        </div>
+        
+    </div>
+	<div class="something">
+	<p>Wait, While we Feed the input in our system..</p>
+	</div>
+</body>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+ window.open('main.php','_self');
+}
+
+</script>
+</html>
