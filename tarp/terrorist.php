@@ -27,7 +27,7 @@ include 'topbar.php';
       <input type="text" name="lon" id="terroristlon" hidden>
       <input type="text" name="area" id="terroristarea" hidden>
 	  <input type="text" name="check" value="3" hidden>
-      <button hidden name="button" id="terrorist_button"></button>
+      <button hidden name="button" id="terrorist_button" ></button>
     </form>
 
 

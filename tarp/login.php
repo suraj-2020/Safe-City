@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $server = "localhost";
   $username = "root";
@@ -27,12 +28,16 @@ $flag=0;
 
     	//echo $_POST['email'].$row['Email'].$_POST['password'].$row['Password']."<br>";
         if($m == $row['Email'] && $pass == $row['Password'])
+        {
+          $_SESSION["uid"]=$m;
+          $_SESSION["rat"]= $row['Rating'];
         	$flag=1;
+        }
     }
 }
 
 if($flag==1)
-{
+{ 
 	$link="<script>window.open('main.php','_self');</script>";
     echo $link;
 }
